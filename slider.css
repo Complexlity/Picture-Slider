@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;900&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Roboto+Slab:wght@300;400;500;600;700;900&family=Satisfy&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+ overflow:hidden;
+ height: 100vh;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.slider-container{
+  /*margin-top: -10px;
+  margin-left:-10px;*/
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left-sliding{
+  width: 30%;
+  height:100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.8s ease-in;
+}
+
+.left-sliding > div {
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  color:white;
+}
+
+.left-sliding h1 {
+ font-size: 40px;
+ margin-bottom: 10px;
+ margin-top: -80px;
+}
+
+.right-sliding {
+  height:100%;
+  position: absolute;
+  top: 0;
+  left:30%;
+  width:70%;
+  transform: translate(0px);
+  transition: transform 0.8s ease-in;
+  
+
+}
+
+.right-sliding > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height:100%;
+  width:100%;
+}
+
+button {
+  border: none;
+  background-color: white;
+  color:grey;
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+button:hover{
+  color:black;
+}
+.slider-container .action-buttons button {
+  position:absolute;
+ 
+  top: 45%;
+  left:30%;
+  z-index: 3000;
+}
+
+.slider-container .action-buttons .down-button{
+  transform: translateX(-100%);
+ border-bottom-left-radius: 6px;
+ border-top-left-radius: 6px;
+}
+
+.slider-container .action-buttons .up-button{
+  transform: translateY(-100%);
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
