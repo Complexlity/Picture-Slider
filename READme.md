@@ -1,1 +1,3 @@
-This is my first project using web technologies. I hope you enjoy it
+Web Full Screen Picture Slider
+
+[LIVE PREVIEW](https://complexlity-picture-slider.netlify.app)
