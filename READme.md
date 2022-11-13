@@ -1,1 +1,1 @@
-This is my first project using web technologies. I hope you enjoy it
+IMAGE SLIDER USING JAVASCRIPT
